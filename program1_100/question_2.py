@@ -94,6 +94,6 @@ if __name__ == '__main__':
     aa = sol.addTwoNumbers(l1, l2)
     print(aa)
 
-    bb = sol.addTwoNumbers_2(l1,l2)
+    bb = sol.addTwoNumbers_2(l1, l2)
 
     print(bb)
