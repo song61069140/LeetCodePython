@@ -38,7 +38,7 @@ class Solution(object):
         max_length = len(s_set)
         if max_length == s_length:
             return max_length
-        if max_length <= 2:
+        if max_length <= 1:
             return max_length
 
         for i in range(max_length):
