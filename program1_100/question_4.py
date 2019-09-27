@@ -71,3 +71,8 @@ if __name__ == '__main__':
                                     nums2=[3, 4])
 
     print(b)
+
+    print(sys.api_version)
+    print(sys.maxsize)
+
+    print(sys.maxunicode)
