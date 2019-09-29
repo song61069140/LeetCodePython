@@ -32,38 +32,18 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        if x < 0:
-            newx = -x
-        else:
-            newx = x
-        x_str = str(newx)
-        half = len(x_str) // 2
-        mid = None
-        if len(x_str) % 2 == 1:
-            mid = [x_str[half]]
-            left = x_str[:half]
-            right = x_str[half + 1:]
-        else:
-            left = x_str[:half]
-            right = x_str[half:]
-        left = list(left)
-        right = list(right)
-        left.reverse()
-        right.reverse()
-        if mid:
-            result = right + mid + left
-        else:
-            result = right + left
+        x = str(x)
+        x = list(x)
+        x.reverse()
+        if x[len(x)-1] == '-':
+            x = x[:len(x) - 1]
+            x.insert(0, '-')
+        x = int(''.join(x))
 
-        if x < 0:
-            value = -int(''.join(result))
-        else:
-            value = int(''.join(result))
-
-        if -2 ** 31 >= value or value >= 2 ** 31 - 1:
+        if -2 ** 31 >= x or x >= 2 ** 31 - 1:
             return 0
         else:
-            return value
+            return x
 
 
 class Solution2(object):
