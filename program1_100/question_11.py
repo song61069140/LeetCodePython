@@ -20,6 +20,7 @@ class Solution(object):
         """
         :type height: List[int]
         :rtype: int
+        两次遍历循环的方式也可以解出结果，但是效率太低了
         """
         left = 0
         right = len(height) - 1
