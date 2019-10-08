@@ -47,6 +47,6 @@ class Solution(object):
 if __name__ == '__main__':
     pass
     solu = Solution()
-    # print(solu.longestCommonPrefix(["flower", "flow", "flight"]))
-    # print(solu.longestCommonPrefix(["dog", "racecar", "car"]))
+    print(solu.longestCommonPrefix(["flower", "flow", "flight"]))
+    print(solu.longestCommonPrefix(["dog", "racecar", "car"]))
     print(solu.longestCommonPrefix(["aa", "a"]))
